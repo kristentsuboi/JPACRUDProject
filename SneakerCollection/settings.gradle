@@ -1,0 +1,3 @@
+rootProject.name = 'SneakerCollection'
+
+includeFlat 'JPASneaker'
