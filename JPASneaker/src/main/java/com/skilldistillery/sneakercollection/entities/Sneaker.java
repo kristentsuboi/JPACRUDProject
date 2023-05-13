@@ -27,6 +27,9 @@ public class Sneaker {
 	
 	@Column(name="resale_value")
 	private Double resaleValue;
+	
+	@Column(name="sneaker_image")
+	private String sneakerImage;
 
 	public Sneaker() {
 		super();
@@ -86,6 +89,15 @@ public class Sneaker {
 
 	public void setResaleValue(Double resaleValue) {
 		this.resaleValue = resaleValue;
+	}
+	
+
+	public String getSneakerImage() {
+		return sneakerImage;
+	}
+
+	public void setSneakerImage(String sneakerImage) {
+		this.sneakerImage = sneakerImage;
 	}
 
 	@Override
