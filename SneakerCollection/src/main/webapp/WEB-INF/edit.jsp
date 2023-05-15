@@ -30,13 +30,16 @@
 	    	<input type="text" name="resaleValue" value="${sneaker.resaleValue}"/>
 	    	<br>
 	    <label for="description">Image</label>
-	    	<input type="hidden" name="sneakerImage" value="${sneaker.sneakerImage}"/>
-	    	<img src="${sneaker.sneakerImage }" width="200" height="150"/>
+	    	<input type="text" name="sneakerImage" value="${sneaker.sneakerImage}"/>
+	    	<%-- <img src="${sneaker.sneakerImage }" width="200" height="150"/> --%>
 	    	<br>
-	    <input type="submit" value="Send Updated Sneaker Details"/>
+	    <input type="submit" class="col btn btn-primary" value="Send Updated Sneaker Details"/>
 			<input type="hidden" name="sneakerId" value="${sneaker.id}"/>
 	    	</form>
 	    	
+	    	<form action ="home.do">
+		<input type="submit" class="col btn btn-primary" value="Back to home"/>
+		</form>
 	    	
 </div>
 <jsp:include page="bootstrapFoot.jsp"/>

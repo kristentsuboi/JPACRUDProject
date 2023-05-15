@@ -12,18 +12,19 @@
 	<h1>Welcome to my Sneaker Collection</h1>
 
 	<form action="getSneaker.do" method="GET">
-		Search by Sneaker ID: <input class="form-control" type="text"
+		<h2>Search by Sneaker ID: </h2>
+		<input class="form-control" type="text"
 			name="sneakerId" /> <input class="col btn btn-primary" type="submit"
 			value="Show Sneaker" />
 	</form>
 	<br>
 
 	<form action="listAll.do" method=GET>
-		<input type="submit" value="List All Sneakers" />
+		<input class="col btn btn-primary" type="submit" value="List All Sneakers" />
 	</form>
 <br>
 	<form action="createSneaker.do" method=GET>
-		<input type="submit" value="Add Sneakers" />
+		<input class ="col btn btn-primary" type="submit" value="Add Sneakers" />
 	</form>
 <jsp:include page="bootstrapFoot.jsp"/>
 </body>

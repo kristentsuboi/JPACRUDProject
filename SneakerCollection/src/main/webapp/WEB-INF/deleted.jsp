@@ -10,7 +10,7 @@
 <body>
 <h2>Delete Status: </h2>
 ${result }
-
+<br>
 <a href="home.do" class="btn btn-secondary" role="button">Back to
 		Home</a>
 <jsp:include page="bootstrapFoot.jsp"/>

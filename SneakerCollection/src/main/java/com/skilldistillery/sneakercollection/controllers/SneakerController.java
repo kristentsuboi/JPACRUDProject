@@ -26,7 +26,7 @@ public class SneakerController {
 	@RequestMapping(path = "getSneaker.do", method = RequestMethod.GET)
 	public String getSneaker(Integer sneakerId, Model model) {
 		Sneaker sneaker = sneakerDao.findById(sneakerId);
-		model.addAttribute(sneaker);
+		model.addAttribute("sneaker", sneaker);
 		return "single";
 	}
 

@@ -12,7 +12,6 @@
 
 <div class="container">
 		<form action="createdSneaker.do" method="POST">
-		    
 		    <label for="brand">Brand: </label>
 			<input type="text" name="brand" required/> 
 			<br>

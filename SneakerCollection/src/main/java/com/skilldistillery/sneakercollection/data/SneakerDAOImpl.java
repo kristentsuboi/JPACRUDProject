@@ -43,6 +43,7 @@ public class SneakerDAOImpl implements SneakerDAO {
 		sneaker.setSecondaryColor(updatedSneaker.getSecondaryColor());
 		sneaker.setSize(updatedSneaker.getSize());
 		sneaker.setResaleValue(updatedSneaker.getResaleValue());
+		sneaker.setSneakerImage(updatedSneaker.getSneakerImage());
 		return sneaker;
 	}
 

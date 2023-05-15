@@ -9,8 +9,7 @@
 </head>
 <body>
 	<h2>Your Newly Updated Sneaker Details</h2>
-	<c:choose>
-		<c:when test="${!empty sneaker }">
+	
 
 			<%-- <h3>Sneaker ID: ${sneaker.id }</h3> --%>
 			<ul>
@@ -23,8 +22,7 @@
 				<li><img src="${sneaker.sneakerImage }" width="200"
 					height="150" /></li>
 			</ul>
-		</c:when>
-	</c:choose>
+
 	<a href="home.do" class="btn btn-secondary" role="button">Back to
 		Home</a>
 <jsp:include page="bootstrapFoot.jsp"/>

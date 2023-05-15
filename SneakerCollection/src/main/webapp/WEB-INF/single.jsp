@@ -10,7 +10,7 @@
 <body>
 	<h2>Sneaker Details</h2>
 	<c:choose>
-		<c:when test="${!empty sneaker }">
+		<c:when test="${not empty sneaker.id}">
 		
 			<h3>Sneaker ID: ${sneaker.id }</h3>
 			<ul>
@@ -24,11 +24,11 @@
 					height="150" /></li>
 			</ul>
 			<form action="editSneaker.do" method=GET>
-				<input type="submit" value="Edit Sneaker" /> <input type="hidden"
+				<input type="submit" class="col btn btn-primary" value="Edit Sneaker" /> <input type="hidden"
 					name="sneakerId" value="${sneaker.id }" />
 			</form>
 			<form action="delete.do" method=POST>
-				<input type="submit" value="DELETE Sneaker" /> <input type="hidden"
+				<input type="submit" class="col btn btn-primary" value="DELETE Sneaker" /> <input type="hidden"
 					name="sneakerId" value="${sneaker.id }" />
 			</form>
 		</c:when>
@@ -36,8 +36,10 @@
 			<h2>No sneaker found....</h2>
 		</c:otherwise>
 	</c:choose>
-	<a href="home.do" class="btn btn-secondary" role="button">Back to
-		Home</a>
+	
+		<form action ="home.do">
+		<input type="submit" class="col btn btn-primary" value="Back to home"/>
+		</form>
 		<jsp:include page="bootstrapFoot.jsp"/>
 </body>
 </html>
